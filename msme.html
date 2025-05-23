@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSME ITR Filing @ ₹999 | Tax Experts for Small Businesses</title>
+    <meta name="description" content="Affordable ITR filing services for MSMEs at just ₹999. Expert assistance, secure document handling, and guaranteed accuracy.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Custom CSS for elements that need more styling than Tailwind provides */
+        .gradient-bg {
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+        }
+        .form-step {
+            display: none;
+        }
+        .form-step.active {
+            display: block;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .testimonial-card {
+            box-shadow: 0 10px 30px -10px rgba(79, 70, 229, 0.3);
+        }
+        .file-upload-container {
+            border: 2px dashed #c7d2fe;
+            transition: all 0.3s ease;
+        }
+        .file-upload-container:hover {
+            border-color: #818cf8;
+            background-color: #f8fafc;
+        }
+        .file-upload-container.dragover {
+            border-color: #4f46e5;
+            background-color: #eef2ff;
+        }
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .accordion-content.active {
+            max-height: 500px;
+        }
+        .nav-link:hover::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+            background: #4f46e5;
+            margin-top: 2px;
+        }
+        .progress-bar {
+            transition: width 0.5s ease;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="fixed bottom-0 left-0 right-0 bg-gray-900 text-white p-4 z-50 hidden">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+            <p class="mb-4 md:mb-0">We use cookies to ensure you get the best experience on our website. By continuing, you agree to our <a href="#" class="text-indigo-300 hover:underline">Cookie Policy</a>.</p>
+            <button id="acceptCookies" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-md transition">Accept</button>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-40">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="#" class="flex items-center">
+                        <div class="bg-indigo-600 text-white p-2 rounded-md mr-2">
+                            <i class="fas fa-file-invoice-dollar text-xl"></i>
+                        </div>
+                        <span class="text-xl font-bold text-indigo-600">MSME<span class="text-indigo-400">TaxPro</span></span>
+                    </a>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="nav-link text-gray-700 hover:text-indigo-600 transition">Home</a>
+                    <a href="#features" class="nav-link text-gray-700 hover:text-indigo-600 transition">Features</a>
+                    <a href="#process" class="nav-link text-gray-700 hover:text-indigo-600 transition">Process</a>
+                    <a href="#pricing" class="nav-link text-gray-700 hover:text-indigo-600 transition">Pricing</a>
+                    <a href="#testimonials" class="nav-link text-gray-700 hover:text-indigo-600 transition">Testimonials</a>
+                    <a href="#contact" class="nav-link text-gray-700 hover:text-indigo-600 transition">Contact</a>
+                </div>
+                
+                <div class="flex items-center">
+                    <a href="#file-now" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-md transition hidden md:block">
+                        File Your ITR Now
+                    </a>
+                    <button id="mobileMenuButton" class="md:hidden text-gray-700 focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
+            <div class="container mx-auto px-4 py-2 flex flex-col space-y-2">
+                <a href="#home" class="px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100">Home</a>
+                <a href="#features" class="px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100">Features</a>
+                <a href="#process" class="px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100">Process</a>
+                <a href="#pricing" class="px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100">Pricing</a>
+                <a href="#testimonials" class="px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100">Testimonials</a>
+                <a href="#contact" class="px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100">Contact</a>
+                <a href="#file-now" class="bg-indigo-600 text-white px-3 py-2 rounded-md text-center mt-2">
+                    File Your ITR Now
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg text-white py-20">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6">MSME ITR Filing Made Simple @ Just ₹999</h1>
+                    <p class="text-xl mb-8 opacity-90">Expert-assisted income tax return filing for small businesses with 100% accuracy guarantee and secure document handling.</p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#file-now" class="bg-white text-indigo-600 hover:bg-gray-100 px-6 py-3 rounded-md font-semibold text-center transition">
+                            Start Filing Now <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                        <a href="#process" class="border-2 border-white text-white hover:bg-white hover:text-indigo-600 px-6 py-3 rounded-md font-semibold text-center transition">
+                            How It Works
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative">
+                        <div class="bg-white rounded-xl p-6 shadow-2xl max-w-md">
+                            <div class="flex items-center mb-4">
+                                <div class="bg-indigo-100 p-2 rounded-full mr-3">
+                                    <i class="fas fa-check-circle text-indigo-600"></i>
+                                </div>
+                                <h3 class="font-bold text-gray-800">Instant Quote Calculator</h3>
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-gray-700 mb-2">Business Type</label>
+                                <select class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                                    <option>Sole Proprietorship</option>
+                                    <option>Partnership</option>
+                                    <option>LLP</option>
+                                    <option>Private Limited</option>
+                                </select>
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-gray-700 mb-2">Annual Turnover</label>
+                                <select class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                                    <option>Below ₹20 Lakhs</option>
+                                    <option>₹20 Lakhs - ₹1 Crore</option>
+                                    <option>₹1 Crore - ₹5 Crore</option>
+                                    <option>Above ₹5 Crore</option>
+                                </select>
+                            </div>
+                            <div class="bg-indigo-50 p-4 rounded-md mb-4">
+                                <div class="flex justify-between items-center">
+                                    <span class="font-semibold text-gray-700">Estimated Fee:</span>
+                                    <span class="text-2xl font-bold text-indigo-600">₹999</span>
+                                </div>
+                            </div>
+                            <button class="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-2 rounded-md transition">
+                                Proceed to File
+                            </button>
+                        </div>
+                        <div class="absolute -top-6 -left-6 w-24 h-24 bg-yellow-400 rounded-full opacity-20"></div>
+                        <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-pink-400 rounded-full opacity-20"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Indicators -->
+    <div class="bg-gray-50 py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16">
+                <div class="flex items-center">
+                    <i class="fas fa-shield-alt text-indigo-600 text-2xl mr-3"></i>
+                    <span class="font-medium">256-bit SSL Security</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-lock text-indigo-600 text-2xl mr-3"></i>
+                    <span class="font-medium">Secure Document Handling</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-headset text-indigo-600 text-2xl mr-3"></i>
+                    <span class="font-medium">Dedicated Tax Expert</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-check-circle text-indigo-600 text-2xl mr-3"></i>
+                    <span class="font-medium">100% Accuracy Guarantee</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Why Choose Our MSME ITR Filing Service?</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">We simplify tax compliance for small businesses with expert guidance at an affordable price.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-xl hover:shadow-lg transition">
+                    <div class="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-rupee-sign text-indigo-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Affordable Pricing</h3>
+                    <p class="text-gray-600">Flat ₹999 fee regardless of your business size or complexity. No hidden charges.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-xl hover:shadow-lg transition">
+                    <div class="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-user-tie text-indigo-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Expert Assistance</h3>
+                    <p class="text-gray-600">Dedicated tax professional assigned to handle your filing from start to finish.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-xl hover:shadow-lg transition">
+                    <div class="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-cloud-upload-alt text-indigo-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Secure Document Upload</h3>
+                    <p class="text-gray-600">Bank-level encryption for all your financial documents and personal data.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-xl hover:shadow-lg transition">
+                    <div class="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-bolt text-indigo-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Fast Processing</h3>
+                    <p class="text-gray-600">Average turnaround time of just 2-3 business days after document submission.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-xl hover:shadow-lg transition">
+                    <div class="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-mobile-alt text-indigo-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Status Tracking</h3>
+                    <p class="text-gray-600">Real-time updates on your filing status via email, SMS, and dashboard.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-xl hover:shadow-lg transition">
+                    <div class="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-file-signature text-indigo-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Post-Filing Support</h3>
+                    <p class="text-gray-600">Free assistance for any notices or queries from the tax department.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Simple 4-Step ITR Filing Process</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Our streamlined process makes tax filing effortless for your business.</p>
+            </div>
+            
+            <div class="relative">
+                <!-- Progress Line -->
+                <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-indigo-200 top-0"></div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Step 1 -->
+                    <div class="bg-white p-8 rounded-xl shadow-md relative z-10 hover:shadow-lg transition">
+                        <div class="bg-indigo-600 text-white w-12 h-12 rounded-full flex items-center justify-center mb-6 mx-auto md:mx-0 font-bold text-xl">1</div>
+                        <h3 class="text-xl font-bold mb-3 text-center md:text-left">Share Basic Details</h3>
+                        <p class="text-gray-600 text-center md:text-left">Fill our simple online form with your business and income details.</p>
+                    </div>
+                    
+                    <!-- Step 2 -->
+                    <div class="bg-white p-8 rounded-xl shadow-md relative z-10 hover:shadow-lg transition">
+                        <div class="bg-indigo-600 text-white w-12 h-12 rounded-full flex items-center justify-center mb-6 mx-auto md:mx-0 font-bold text-xl">2</div>
+                        <h3 class="text-xl font-bold mb-3 text-center md:text-left">Upload Documents</h3>
+                        <p class="text-gray-600 text-center md:text-left">Securely upload required financial documents through our portal.</p>
+                    </div>
+                    
+                    <!-- Step 3 -->
+                    <div class="bg-white p-8 rounded-xl shadow-md relative z-10 hover:shadow-lg transition">
+                        <div class="bg-indigo-600 text-white w-12 h-12 rounded-full flex items-center justify-center mb-6 mx-auto md:mx-0 font-bold text-xl">3</div>
+                        <h3 class="text-xl font-bold mb-3 text-center md:text-left">Expert Review</h3>
+                        <p class="text-gray-600 text-center md:text-left">Our tax expert verifies details and prepares your ITR accurately.</p>
+                    </div>
+                    
+                    <!-- Step 4 -->
+                    <div class="bg-white p-8 rounded-xl shadow-md relative z-10 hover:shadow-lg transition">
+                        <div class="bg-indigo-600 text-white w-12 h-12 rounded-full flex items-center justify-center mb-6 mx-auto md:mx-0 font-bold text-xl">4</div>
+                        <h3 class="text-xl font-bold mb-3 text-center md:text-left">Filing & Acknowledgement</h3>
+                        <p class="text-gray-600 text-center md:text-left">We file your return and share the acknowledgement instantly.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#file-now" class="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-3 rounded-md font-semibold inline-block transition">
+                    Start Filing Now <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Transparent Pricing</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">One simple plan with everything you need for accurate ITR filing.</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-indigo-50 rounded-xl overflow-hidden shadow-lg">
+                    <div class="p-8 md:p-10">
+                        <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8">
+                            <div>
+                                <h3 class="text-2xl font-bold text-indigo-800 mb-2">MSME ITR Filing Package</h3>
+                                <p class="text-gray-600">Perfect for sole proprietors, freelancers, and small businesses</p>
+                            </div>
+                            <div class="mt-4 md:mt-0">
+                                <span class="text-4xl font-bold text-indigo-600">₹999</span>
+                                <span class="text-gray-600">/filing</span>
+                            </div>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-semibold">Income Tax Return Preparation</h4>
+                                    <p class="text-gray-600 text-sm">For ITR-3/ITR-4 as applicable</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-semibold">Dedicated Tax Expert</h4>
+                                    <p class="text-gray-600 text-sm">Assigned to handle your filing</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-semibold">Form 16/16A Reconciliation</h4>
+                                    <p class="text-gray-600 text-sm">If TDS deducted</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-semibold">Capital Gains Calculation</h4>
+                                    <p class="text-gray-600 text-sm">If applicable</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-semibold">Business Income Computation</h4>
+                                    <p class="text-gray-600 text-sm">As per tax laws</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-semibold">Final Review & E-filing</h4>
+                                    <p class="text-gray-600 text-sm">With digital signature</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white p-6 rounded-lg border border-gray-200">
+                            <h4 class="font-bold mb-3">Optional Add-ons</h4>
+                            <div class="space-y-4">
+                                <div class="flex justify-between items-center">
+                                    <div class="flex items-center">
+                                        <input type="checkbox" id="addon1" class="h-5 w-5 text-indigo-600 rounded focus:ring-indigo-500">
+                                        <label for="addon1" class="ml-3">
+                                            <span class="font-medium">Previous Year ITR Revision</span>
+                                            <p class="text-sm text-gray-500">For any amendments needed</p>
+                                        </label>
+                                    </div>
+                                    <span class="font-semibold">+₹499</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <div class="flex items-center">
+                                        <input type="checkbox" id="addon2" class="h-5 w-5 text-indigo-600 rounded focus:ring-indigo-500">
+                                        <label for="addon2" class="ml-3">
+                                            <span class="font-medium">Tax Notice Response</span>
+                                            <p class="text-sm text-gray-500">For any department queries</p>
+                                        </label>
+                                    </div>
+                                    <span class="font-semibold">+₹799</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <div class="flex items-center">
+                                        <input type="checkbox" id="addon3" class="h-5 w-5 text-indigo-600 rounded focus:ring-indigo-500">
+                                        <label for="addon3" class="ml-3">
+                                            <span class="font-medium">Tax Planning Consultation</span>
+                                            <p class="text-sm text-gray-500">30-min session with expert</p>
+                                        </label>
+                                    </div>
+                                    <span class="font-semibold">+₹999</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-50 px-8 py-6 border-t border-gray-200">
+                        <div class="flex flex-col md:flex-row justify-between items-center">
+                            <div class="mb-4 md:mb-0">
+                                <h4 class="font-bold">Total Amount: <span class="text-indigo-600">₹999</span></h4>
+                                <p class="text-sm text-gray-600">No payment required until document verification</p>
+                            </div>
+                            <a href="#file-now" class="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-3 rounded-md font-semibold transition whitespace-nowrap">
+                                Proceed to File <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+		<section id="testimonials" class="py-16 bg-gray-50">
+			<div class="container mx-auto px-4">
+				<div class="text-center mb-16">
+					<h2 class="text-3xl md:text-4xl font-bold mb-4">What Our Clients Say</h2>
+					<p class="text-xl text-gray-600 max-w-3xl mx-auto">Trusted by 1,200+ MSMEs and small business owners across India.</p>
+				</div>
+				
+				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+					<!-- Testimonial 1 -->
+					<div class="bg-white p-8 rounded-xl testimonial-card">
+						<div class="flex items-center mb-6">
+							<div class="w-12 h-12 rounded-full bg-indigo-100 flex items-center justify-center mr-4">
+								<span class="text-indigo-600 font-bold text-xl">RK</span>
+							</div>
+							<div>
+								<h4 class="font-bold">Rajesh Kumar</h4>
+								<p class="text-gray-600 text-sm">Proprietor, RK Textiles</p>
+							</div>
+						</div>
+						<div class="mb-4">
+							<div class="flex text-yellow-400">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+							</div>
+						</div>
+						<p class="text-gray-700 mb-4">"As a small business owner, tax filing was always stressful. MSMETaxPro made it so simple and affordable. My dedicated tax expert handled everything professionally."</p>
+						<p class="text-sm text-gray-500">Filed ITR on 15 July 2023</p>
+					</div>
+					
+					<!-- Testimonial 2 -->
+					<div class="bg-white p-8 rounded-xl testimonial-card">
+						<div class="flex items-center mb-6">
+							<div class="w-12 h-12 rounded-full bg-indigo-100 flex items-center justify-center mr-4">
+								<span class="text-indigo-600 font-bold text-xl">SP</span>
+							</div>
+							<div>
+								<h4 class="font-bold">Sunita Patel</h4>
+								<p class="text-gray-600 text-sm">Owner, Sunshine Catering</p>
+							</div>
+						</div>
+						<div class="mb-4">
+							<div class="flex text-yellow-400">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+							</div>
+						</div>
+						<p class="text-gray-700 mb-4">"The document upload process was very secure and easy. I received my ITR acknowledgement within 2 days. Will definitely use their service next year too."</p>
+						<p class="text-sm text-gray-500">Filed ITR on 22 Aug 2023</p>
+					</div>
+					
+					<!-- Testimonial 3 -->
+					<div class="bg-white p-8 rounded-xl testimonial-card">
+						<div class="flex items-center mb-6">
+							<div class="w-12 h-12 rounded-full bg-indigo-100 flex items-center justify-center mr-4">
+								<span class="text-indigo-600 font-bold text-xl">AM</span>
+							</div>
+							<div>
+								<h4 class="font-bold">Amit Mehta</h4>
+								<p class="text-gray-600 text-sm">Freelance Consultant</p>
+							</div>
+						</div>
+						<div class="mb-4">
+							<div class="flex text-yellow-400">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+						</div>
+						<p class="text-gray-700 mb-4">"Excellent service at a reasonable price. The tax expert explained all deductions applicable to my freelance income. Much better than other expensive options I've tried."</p>
+						<p class="text-sm text-gray-500">Filed ITR on 5 Sept 2023</p>
+					</div>
+				</div>
+				
+				<div class="text-center mt-12">
+					<a href="#" class="text-indigo-600 hover:text-indigo-800 font-semibold inline-flex items-center transition">
+						View More Testimonials <i class="fas fa-chevron-right ml-2"></i>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- Document Upload & Form Section -->
+		<section id="file-now" class="py-16 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="max-w-4xl mx-auto">
+				<!-- Header -->
+				<div class="text-center mb-12">
+					<h2 class="text-3xl md:text-4xl font-bold mb-4">File Your ITR in Minutes</h2>
+					<p class="text-xl text-gray-600">Complete our simple form and upload required documents to get started.</p>
+				</div>
+
+				<!-- Progress Bar -->
+				<div class="mb-8">
+					<div class="flex justify-between mb-2">
+						<span class="text-sm font-medium text-indigo-600">Step <span id="current-step">1</span> of 4</span>
+						<span class="text-sm font-medium text-gray-500"><span id="progress-percentage">25</span>% Complete</span>
+					</div>
+					<div class="w-full bg-gray-200 rounded-full h-2.5 overflow-hidden">
+						<div id="progress-bar" class="bg-indigo-600 h-full transition-all duration-300" style="width: 25%"></div>
+					</div>
+				</div>
+
+				<!-- Multi-step Form -->
+				<form id="itrForm" class="bg-gray-50 rounded-xl p-6 md:p-8 shadow-sm">
+					<!-- Step 1 - Basic Information -->
+					<div class="form-step active" id="step1">
+						<h3 class="text-xl font-bold mb-6 text-indigo-800">Basic Business Information</h3>
+						<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+							<div>
+								<label for="business-name" class="block text-sm font-medium text-gray-700 mb-1">Business Name</label>
+								<input type="text" id="business-name" name="business-name" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
+							</div>
+							<div>
+								<label for="business-type" class="block text-sm font-medium text-gray-700 mb-1">Business Type</label>
+								<select id="business-type" name="business-type" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
+									<option value="">Select Business Type</option>
+									<option value="sole-proprietor">Sole Proprietorship</option>
+									<option value="partnership">Partnership</option>
+									<option value="llp">LLP</option>
+									<option value="private-ltd">Private Limited</option>
+									<option value="other">Other</option>
+								</select>
+							</div>
+							<div>
+								<label for="pan-number" class="block text-sm font-medium text-gray-700 mb-1">PAN Number</label>
+								<input type="text" id="pan-number" name="pan-number" pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 uppercase" required>
+								<p class="mt-1 text-xs text-gray-500">Format: ABCDE1234F</p>
+							</div>
+							<div>
+								<label for="gstin" class="block text-sm font-medium text-gray-700 mb-1">GSTIN (if registered)</label>
+								<input type="text" id="gstin" name="gstin" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500">
+							</div>
+						</div>
+						<div class="flex justify-end">
+							<button type="button" onclick="nextStep(1, 2)" class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2 rounded-md font-medium transition">
+								Next <i class="fas fa-arrow-right ml-2"></i>
+							</button>
+						</div>
+					</div>
+
+					<!-- Step 2 - Contact Information -->
+					<div class="form-step hidden" id="step2">
+						<h3 class="text-xl font-bold mb-6 text-indigo-800">Contact Information</h3>
+						<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+							<div>
+								<label for="full-name" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+								<input type="text" id="full-name" name="full-name" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
+							</div>
+							<div>
+								<label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+								<input type="email" id="email" name="email" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
+							</div>
+							<div>
+								<label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Mobile Number</label>
+								<input type="tel" id="phone" name="phone" pattern="[0-9]{10}" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
+								<p class="mt-1 text-xs text-gray-500">10-digit number without country code</p>
+							</div>
+							<div>
+								<label for="alternate-phone" class="block text-sm font-medium text-gray-700 mb-1">Alternate Number (Optional)</label>
+								<input type="tel" id="alternate-phone" name="alternate-phone" pattern="[0-9]{10}" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500">
+							</div>
+						</div>
+						<div class="flex justify-between">
+							<button type="button" onclick="prevStep(2, 1)" class="text-indigo-600 hover:text-indigo-800 font-medium flex items-center transition">
+								<i class="fas fa-arrow-left mr-2"></i> Previous
+							</button>
+							<button type="button" onclick="nextStep(2, 3)" class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2 rounded-md font-medium transition">
+								Next <i class="fas fa-arrow-right ml-2"></i>
+							</button>
+						</div>
+					</div>
+
+					<!-- Step 3 - Income Details -->
+					<div class="form-step hidden" id="step3">
+						<h3 class="text-xl font-bold mb-6 text-indigo-800">Income Details</h3>
+						<div class="mb-6">
+							<label class="block text-sm font-medium text-gray-700 mb-3">Financial Year</label>
+							<div class="flex items-center space-x-4">
+								<div class="flex items-center">
+									<input id="fy-2022-23" name="financial-year" type="radio" value="2022-23" class="h-4 w-4 text-indigo-600 focus:ring-indigo-500" checked>
+									<label for="fy-2022-23" class="ml-2 block text-sm text-gray-700">2022-23</label>
+								</div>
+								<div class="flex items-center">
+									<input id="fy-2021-22" name="financial-year" type="radio" value="2021-22" class="h-4 w-4 text-indigo-600 focus:ring-indigo-500">
+									<label for="fy-2021-22" class="ml-2 block text-sm text-gray-700">2021-22 (Revised Return)</label>
+								</div>
+							</div>
+						</div>
+						<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+							<div>
+								<label for="annual-turnover" class="block text-sm font-medium text-gray-700 mb-1">Annual Turnover (₹)</label>
+								<select id="annual-turnover" name="annual-turnover" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
+									<option value="">Select Range</option>
+									<option value="0-20">Below 20 Lakhs</option>
+									<option value="20-50">20-50 Lakhs</option>
+									<option value="50-100">50 Lakhs - 1 Crore</option>
+									<option value="100-500">1-5 Crore</option>
+									<option value="500+">Above 5 Crore</option>
+								</select>
+							</div>
+							<div>
+								<label for="profit-amount" class="block text-sm font-medium text-gray-700 mb-1">Estimated Profit (₹)</label>
+								<input type="number" id="profit-amount" name="profit-amount" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
+							</div>
+							<div>
+								<label for="tds-amount" class="block text-sm font-medium text-gray-700 mb-1">TDS Deducted (₹)</label>
+								<input type="number" id="tds-amount" name="tds-amount" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" value="0">
+							</div>
+							<div>
+								<label for="tax-paid" class="block text-sm font-medium text-gray-700 mb-1">Advance Tax Paid (₹)</label>
+								<input type="number" id="tax-paid" name="tax-paid" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" value="0">
+							</div>
+						</div>
+						<div class="mb-6">
+							<label class="block text-sm font-medium text-gray-700 mb-3">Do you have capital gains?</label>
+							<div class="flex items-center space-x-4">
+								<div class="flex items-center">
+									<input id="capital-gains-yes" name="capital-gains" type="radio" value="yes" class="h-4 w-4 text-indigo-600 focus:ring-indigo-500">
+									<label for="capital-gains-yes" class="ml-2 block text-sm text-gray-700">Yes</label>
+								</div>
+								<div class="flex items-center">
+									<input id="capital-gains-no" name="capital-gains" type="radio" value="no" class="h-4 w-4 text-indigo-600 focus:ring-indigo-500" checked>
+									<label for="capital-gains-no" class="ml-2 block text-sm text-gray-700">No</label>
+								</div>
+							</div>
+						</div>
+						<div class="flex justify-between">
+							<button type="button" onclick="prevStep(3, 2)" class="text-indigo-600 hover:text-indigo-800 font-medium flex items-center transition">
+								<i class="fas fa-arrow-left mr-2"></i> Previous
+							</button>
+							<button type="button" onclick="nextStep(3, 4)" class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2 rounded-md font-medium transition">
+								Next <i class="fas fa-arrow-right ml-2"></i>
+							</button>
+						</div>
+					</div>
+
+					<!-- Step 4 - Document Upload -->
+					<div class="form-step hidden" id="step4">
+						<h3 class="text-xl font-bold mb-6 text-indigo-800">Upload Required Documents</h3>
+						<div class="mb-8">
+							<p class="text-gray-600 mb-4">Please upload clear scans or photos of the following documents (PDF, JPG, PNG up to 5MB each):</p>
+							<div class="space-y-4">
+								<div class="file-upload-container rounded-lg p-4 mb-4" id="pan-upload-container">
+									<div class="flex items-center justify-between mb-2">
+										<div>
+											<span class="font-medium">PAN Card</span>
+											<span class="text-xs text-red-500 ml-2">*Required</span>
+										</div>
+										<span class="text-xs text-gray-500">Max 5MB</span>
+									</div>
+									<div class="flex flex-col items-center justify-center pt-5 pb-6" id="pan-drop-area">
+										<i class="fas fa-cloud-upload-alt text-3xl text-indigo-400 mb-2"></i>
+										<p class="mb-2 text-sm text-gray-500">Drag & drop your file here or</p>
+										<label for="pan-file" class="cursor-pointer bg-indigo-600 hover:bg-indigo-700 text-white text-sm px-4 py-2 rounded-md inline-block transition">
+											Browse Files
+										</label>
+										<input id="pan-file" name="pan-file" type="file" class="hidden" accept=".pdf,.jpg,.jpeg,.png" required>
+									</div>
+									<div id="pan-file-info" class="hidden mt-3 p-3 bg-green-50 rounded-md text-sm text-green-700">
+										<div class="flex justify-between items-center">
+											<span id="pan-file-name"></span>
+											<button type="button" onclick="removeFile('pan-file')" class="text-green-800 hover:text-green-900">
+												<i class="fas fa-times"></i>
+											</button>
+										</div>
+									</div>
+								</div>
+								<div class="file-upload-container rounded-lg p-4 mb-4" id="bank-upload-container">
+									<div class="flex items-center justify-between mb-2">
+										<div>
+											<span class="font-medium">Bank Statements (Apr-Mar)</span>
+											<span class="text-xs text-red-500 ml-2">*Required</span>
+										</div>
+										<span class="text-xs text-gray-500">Max 5MB per file</span>
+									</div>
+									<div class="flex flex-col items-center justify-center pt-5 pb-6" id="bank-drop-area">
+										<i class="fas fa-cloud-upload-alt text-3xl text-indigo-400 mb-2"></i>
+										<p class="mb-2 text-sm text-gray-500">Drag & drop your files here or</p>
+										<label for="bank-files" class="cursor-pointer bg-indigo-600 hover:bg-indigo-700 text-white text-sm px-4 py-2 rounded-md inline-block transition">
+											Browse Files
+										</label>
+										<input id="bank-files" name="bank-files" type="file" class="hidden" accept=".pdf,.jpg,.jpeg,.png" multiple required>
+									</div>
+									<div id="bank-files-info" class="hidden mt-3 p-3 bg-green-50 rounded-md text-sm text-green-700">
+										<div id="bank-files-list"></div>
+									</div>
+								</div>
+								<div class="file-upload-container rounded-lg p-4 mb-4" id="other-upload-container">
+									<div class="flex items-center justify-between mb-2">
+										<div>
+											<span class="font-medium">Other Documents (Optional)</span>
+											<span class="text-xs text-gray-500 ml-2">Form 16A, Rent Receipts, etc.</span>
+										</div>
+										<span class="text-xs text-gray-500">Max 5MB per file</span>
+									</div>
+									<div class="flex flex-col items-center justify-center pt-5 pb-6" id="other-drop-area">
+										<i class="fas fa-cloud-upload-alt text-3xl text-indigo-400 mb-2"></i>
+										<p class="mb-2 text-sm text-gray-500">Drag & drop your files here or</p>
+										<label for="other-files" class="cursor-pointer bg-indigo-600 hover:bg-indigo-700 text-white text-sm px-4 py-2 rounded-md inline-block transition">
+											Browse Files
+										</label>
+										<input id="other-files" name="other-files" type="file" class="hidden" accept=".pdf,.jpg,.jpeg,.png" multiple>
+									</div>
+									<div id="other-files-info" class="hidden mt-3 p-3 bg-blue-50 rounded-md text-sm text-blue-700">
+										<div id="other-files-list"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="mb-6">
+							<label for="additional-notes" class="block text-sm font-medium text-gray-700 mb-1">Additional Notes (Optional)</label>
+							<textarea id="additional-notes" name="additional-notes" rows="3" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+						</div>
+						<div class="flex justify-between">
+							<button type="button" onclick="prevStep(4, 3)" class="text-indigo-600 hover:text-indigo-800 font-medium flex items-center transition">
+								<i class="fas fa-arrow-left mr-2"></i> Previous
+							</button>
+							<button type="submit" class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2 rounded-md font-medium transition">
+								Submit & Proceed to Payment
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Frequently Asked Questions</h2>
+                    <p class="text-xl text-gray-600">Find answers to common questions about MSME ITR filing.</p>
+                </div>
+                
+                <div class="space-y-4">
+                    <!-- FAQ Item 1 -->
+                    <div class="border border-gray-200 rounded-lg overflow-hidden">
+                        <button class="accordion-toggle w-full flex justify-between items-center p-6 bg-white hover:bg-gray-50 transition">
+                            <span class="text-lg font-medium text-left">What documents do I need to file my ITR?</span>
+                            <i class="fas fa-chevron-down text-indigo-600 transition-transform transform"></i>
+                        </button>
+                        <div class="accordion-content bg-gray-50">
+                            <div class="p-6 pt-0">
+                                <p class="text-gray-700">You'll need your PAN card, bank statements for the financial year, Form 16/16A (if TDS was deducted), proof of tax payments, and any other income-related documents. For business owners, you should also have your profit/loss statement and balance sheet ready.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 2 -->
+                    <div class="border border-gray-200 rounded-lg overflow-hidden">
+                        <button class="accordion-toggle w-full flex justify-between items-center p-6 bg-white hover:bg-gray-50 transition">
+                            <span class="text-lg font-medium text-left">How long does the ITR filing process take?</span>
+                            <i class="fas fa-chevron-down text-indigo-600 transition-transform transform"></i>
+                        </button>
+                        <div class="accordion-content bg-gray-50">
+                            <div class="p-6 pt-0">
+                                <p class="text-gray-700">Once you submit all required documents through our portal, our tax experts typically complete the filing within 2-3 business days. Complex cases may take slightly longer. You'll receive regular updates on the status of your filing.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 3 -->
+                    <div class="border border-gray-200 rounded-lg overflow-hidden">
+                        <button class="accordion-toggle w-full flex justify-between items-center p-6 bg-white hover:bg-gray-50 transition">
+                            <span class="text-lg font-medium text-left">What if I receive a notice from the Income Tax Department?</span>
+                            <i class="fas fa-chevron-down text-indigo-600 transition-transform transform"></i>
+                        </button>
+                        <div class="accordion-content bg-gray-50">
+                            <div class="p-6 pt-0">
+                                <p class="text-gray-700">If you receive any notice after filing your return, our team will provide free consultation to understand the notice. We also offer paid assistance (₹799) to help you prepare and submit an appropriate response to the tax department.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 4 -->
+                    <div class="border border-gray-200 rounded-lg overflow-hidden">
+                        <button class="accordion-toggle w-full flex justify-between items-center p-6 bg-white hover:bg-gray-50 transition">
+                            <span class="text-lg font-medium text-left">Can I file revised returns through your service?</span>
+                            <i class="fas fa-chevron-down text-indigo-600 transition-transform transform"></i>
+                        </button>
+                        <div class="accordion-content bg-gray-50">
+                            <div class="p-6 pt-0">
+                                <p class="text-gray-700">Yes, we can help you file revised returns for previous years. This is available as an add-on service at ₹499 per filing. Just select the "Previous Year ITR Revision" option when filling out our form.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 5 -->
+                    <div class="border border-gray-200 rounded-lg overflow-hidden">
+                        <button class="accordion-toggle w-full flex justify-between items-center p-6 bg-white hover:bg-gray-50 transition">
+                            <span class="text-lg font-medium text-left">Is my financial data secure with your service?</span>
+                            <i class="fas fa-chevron-down text-indigo-600 transition-transform transform"></i>
+                        </button>
+                        <div class="accordion-content bg-gray-50">
+                            <div class="p-6 pt-0">
+                                <p class="text-gray-700">Absolutely. We use 256-bit SSL encryption for all data transfers, secure cloud storage with access controls for your documents, and strict confidentiality agreements with all our tax professionals. Your data is never shared with third parties without your consent.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-12">
+                    <a href="#" class="text-indigo-600 hover:text-indigo-800 font-semibold inline-flex items-center transition">
+                        View All FAQs <i class="fas fa-chevron-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Contact Our Tax Experts</h2>
+                    <p class="text-xl text-gray-600">Have questions? Our team is here to help you with your ITR filing needs.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <div>
+                        <div class="bg-gray-50 rounded-xl p-8 shadow-sm">
+                            <h3 class="text-xl font-bold mb-6 text-indigo-800">Send Us a Message</h3>
+                            
+                            <form id="contactForm" class="space-y-6">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <div>
+                                        <label for="contact-name" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                                        <input type="text" id="contact-name" name="contact-name" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
+                                    </div>
+                                    <div>
+                                        <label for="contact-email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                                        <input type="email" id="contact-email" name="contact-email" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
+                                    </div>
+                                </div>
+                                
+                                <div>
+                                    <label for="contact-phone" class="block text-sm font-medium text-gray-700 mb-1">Mobile Number</label>
+                                    <input type="tel" id="contact-phone" name="contact-phone" pattern="[0-9]{10}" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
+                                </div>
+                                
+                                <div>
+                                    <label for="contact-subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+                                    <select id="contact-subject" name="contact-subject" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
+                                        <option value="">Select a subject</option>
+                                        <option value="itr-filing">ITR Filing Query</option>
+                                        <option value="documentation">Document Requirements</option>
+                                        <option value="pricing">Pricing & Packages</option>
+                                        <option value="other">Other Question</option>
+                                    </select>
+                                </div>
+                                
+                                <div>
+                                    <label for="contact-message" class="block text-sm font-medium text-gray-700 mb-1">Your Message</label>
+                                    <textarea id="contact-message" name="contact-message" rows="4" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" required></textarea>
+                                </div>
+                                
+                                <div class="flex items-center">
+                                    <input id="contact-consent" name="contact-consent" type="checkbox" class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 rounded" required>
+                                    <label for="contact-consent" class="ml-2 block text-sm text-gray-700">
+                                        I agree to the <a href="#" class="text-indigo-600 hover:underline">Privacy Policy</a> and <a href="#" class="text-indigo-600 hover:underline">Terms of Service</a>
+                                    </label>
+                                </div>
+                                
+                                <div>
+                                    <button type="submit" class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-md font-medium w-full transition">
+                                        Send Message <i class="fas fa-paper-plane ml-2"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="bg-gray-50 rounded-xl p-8 shadow-sm h-full">
+                            <h3 class="text-xl font-bold mb-6 text-indigo-800">Contact Information</h3>
+                            
+                            <div class="space-y-6">
+                                <div class="flex items-start">
+                                    <div class="bg-indigo-100 p-3 rounded-full mr-4">
+                                        <i class="fas fa-map-marker-alt text-indigo-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold mb-1">Registered Office</h4>
+                                        <p class="text-gray-600">123 Tax Plaza, Business District<br>Mumbai, Maharashtra 400001</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <div class="bg-indigo-100 p-3 rounded-full mr-4">
+                                        <i class="fas fa-envelope text-indigo-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold mb-1">Email Us</h4>
+                                        <p class="text-gray-600">
+                                            <a href="mailto:support@msmetaxpro.com" class="hover:text-indigo-600 transition">support@msmetaxpro.com</a><br>
+                                            <a href="mailto:queries@msmetaxpro.com" class="hover:text-indigo-600 transition">queries@msmetaxpro.com</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <div class="bg-indigo-100 p-3 rounded-full mr-4">
+                                        <i class="fas fa-phone-alt text-indigo-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold mb-1">Call Us</h4>
+                                        <p class="text-gray-600">
+                                            <a href="tel:+9118001234567" class="hover:text-indigo-600 transition">+91 1800 123 4567</a> (Toll-Free)<br>
+                                            <a href="tel:+919876543210" class="hover:text-indigo-600 transition">+91 98765 43210</a> (WhatsApp)
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <div class="bg-indigo-100 p-3 rounded-full mr-4">
+                                        <i class="fas fa-clock text-indigo-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold mb-1">Working Hours</h4>
+                                        <p class="text-gray-600">
+                                            Monday to Friday: 9:30 AM - 6:30 PM<br>
+                                            Saturday: 10:00 AM - 4:00 PM<br>
+                                            Sunday: Closed
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-8">
+                                <h4 class="font-semibold mb-4">Follow Us</h4>
+                                <div class="flex space-x-4">
+                                    <a href="#" class="bg-indigo-100 text-indigo-600 hover:bg-indigo-200 w-10 h-10 rounded-full flex items-center justify-center transition">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="#" class="bg-indigo-100 text-indigo-600 hover:bg-indigo-200 w-10 h-10 rounded-full flex items-center justify-center transition">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a href="#" class="bg-indigo-100 text-indigo-600 hover:bg-indigo-200 w-10 h-10 rounded-full flex items-center justify-center transition">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                    <a href="#" class="bg-indigo-100 text-indigo-600 hover:bg-indigo-200 w-10 h-10 rounded-full flex items-center justify-center transition">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <a href="#" class="flex items-center mb-6">
+                        <div class="bg-indigo-600 text-white p-2 rounded-md mr-2">
+                            <i class="fas fa-file-invoice-dollar"></i>
+                        </div>
+                        <span class="text-xl font-bold">MSME<span class="text-indigo-400">TaxPro</span></span>
+                    </a>
+                    <p class="text-gray-400 mb-4">Simplifying tax compliance for small businesses with expert guidance at affordable prices.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="#features" class="text-gray-400 hover:text-white transition">Features</a></li>
+                        <li><a href="#process" class="text-gray-400 hover:text-white transition">Process</a></li>
+                        <li><a href="#pricing" class="text-gray-400 hover:text-white transition">Pricing</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-white transition">Testimonials</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Services</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">ITR Filing for MSMEs</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Revised Return Filing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Tax Notice Response</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Tax Planning Consultation</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">GST Registration</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Bookkeeping Services</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Legal</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Terms of Service</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Refund Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Cookie Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Disclaimer</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">GDPR Compliance</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-500 mb-4 md:mb-0">© 2023 MSMETaxPro. All rights reserved.</p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-500 hover:text-white transition">
+                            <i class="fab fa-cc-visa text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-white transition">
+                            <i class="fab fa-cc-mastercard text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-white transition">
+                            <i class="fab fa-cc-paypal text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-white transition">
+                            <i class="fab fa-cc-amazon-pay text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Live Chat Widget -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <button id="chatButton" class="bg-indigo-600 hover:bg-indigo-700 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg transition transform hover:scale-110">
+            <i class="fas fa-comment-dots text-xl"></i>
+        </button>
+        <div id="chatWidget" class="hidden absolute bottom-20 right-0 w-80 bg-white rounded-lg shadow-xl overflow-hidden">
+            <div class="bg-indigo-600 text-white p-4 flex justify-between items-center">
+                <h3 class="font-semibold">Live Chat Support</h3>
+                <button id="closeChat" class="text-white hover:text-gray-200">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="p-4 h-64 overflow-y-auto bg-gray-50">
+                <div class="text-center text-gray-500 py-8">
+                    <i class="fas fa-comments text-3xl mb-2 text-indigo-300"></i>
+                    <p>Our team is ready to help you with your ITR filing queries.</p>
+                </div>
+            </div>
+            <div class="p-4 border-t border-gray-200">
+                <div class="flex">
+                    <input type="text" placeholder="Type your message..." class="flex-1 px-4 py-2 border rounded-l-md focus:outline-none focus:ring-1 focus:ring-indigo-500">
+                    <button class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-r-md">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+				// Track current step
+		let currentStep = 1;
+
+		// Function to navigate to the next step
+		function nextStep(current, next) {
+			const currentStepDiv = document.getElementById(`step${current}`);
+			const nextStepDiv = document.getElementById(`step${next}`);
+
+			// Validate current step before proceeding
+			if (!validateStep(current)) return;
+
+			// Hide current step and show next step
+			currentStepDiv.classList.add("hidden");
+			nextStepDiv.classList.remove("hidden");
+
+			// Update progress bar
+			currentStep = next;
+			updateProgressBar();
+		}
+
+		// Function to navigate to the previous step
+		function prevStep(current, prev) {
+			const currentStepDiv = document.getElementById(`step${current}`);
+			const prevStepDiv = document.getElementById(`step${prev}`);
+
+			// Hide current step and show previous step
+			currentStepDiv.classList.add("hidden");
+			prevStepDiv.classList.remove("hidden");
+
+			// Update progress bar
+			currentStep = prev;
+			updateProgressBar();
+		}
+
+		// Function to validate the current step
+		function validateStep(step) {
+			const stepDiv = document.getElementById(`step${step}`);
+			const inputs = stepDiv.querySelectorAll("input, select, textarea");
+
+			let isValid = true;
+
+			inputs.forEach((input) => {
+				if (input.required && !input.value) {
+					isValid = false;
+					input.classList.add("border-red-500");
+				} else {
+					input.classList.remove("border-red-500");
+				}
+			});
+
+			return isValid;
+		}
+
+		// Function to update the progress bar
+		function updateProgressBar() {
+			const progressBar = document.getElementById("progress-bar");
+			const percentage = (currentStep / 4) * 100;
+
+			progressBar.style.width = `${percentage}%`;
+			document.getElementById("current-step").innerText = currentStep;
+			document.getElementById("progress-percentage").innerText = Math.round(percentage);
+		}
+
+		// Handle file uploads
+		document.querySelectorAll(".file-upload-container input[type='file']").forEach((input) => {
+			input.addEventListener("change", (event) => {
+				const container = event.target.closest(".file-upload-container");
+				const fileInfoDiv = container.querySelector("[id$='-file-info']");
+				const fileListDiv = container.querySelector("[id$='-files-list']");
+
+				if (event.target.files.length > 0) {
+					fileInfoDiv.classList.remove("hidden");
+
+					if (fileListDiv) {
+						fileListDiv.innerHTML = "";
+						Array.from(event.target.files).forEach((file) => {
+							const fileItem = document.createElement("div");
+							fileItem.className = "flex justify-between items-center mt-2";
+							fileItem.innerHTML = `
+								<span>${file.name}</span>
+								<button type="button" onclick="removeFile('${event.target.id}', '${file.name}')">
+									<i class="fas fa-times text-red-500"></i>
+								</button>
+							`;
+							fileListDiv.appendChild(fileItem);
+						});
+					} else {
+						container.querySelector("[id$='-file-name']").innerText = event.target.files[0].name;
+					}
+				} else {
+					fileInfoDiv.classList.add("hidden");
+				}
+			});
+		});
+
+		// Remove uploaded file
+		function removeFile(inputId, fileName) {
+			const input = document.getElementById(inputId);
+
+			if (fileName) {
+				// Remove specific file from list
+				const files = Array.from(input.files).filter((file) => file.name !== fileName);
+				const dataTransfer = new DataTransfer();
+				files.forEach((file) => dataTransfer.items.add(file));
+				input.files = dataTransfer.files;
+
+				const container = input.closest(".file-upload-container");
+				const fileListDiv = container.querySelector("[id$='-files-list']");
+				fileListDiv.querySelector(`span:contains('${fileName}')`).closest("div").remove();
+
+				if (fileListDiv.children.length === 0) {
+					container.querySelector("[id$='-file-info']").classList.add("hidden");
+				}
+			} else {
+				// Clear single file input
+				input.value = "";
+				input.closest(".file-upload-container").querySelector("[id$='-file-info']").classList.add("hidden");
+			}
+		}
+	
+        // Mobile Menu Toggle
+        document.getElementById('mobileMenuButton').addEventListener('click', function() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Smooth Scrolling for Navigation Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    // Close mobile menu if open
+                    document.getElementById('mobileMenu').classList.add('hidden');
+                    
+                    window.scrollTo({
+                        top:
+</html>
